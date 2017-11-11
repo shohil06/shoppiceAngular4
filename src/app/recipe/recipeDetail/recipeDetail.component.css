@@ -1,0 +1,13 @@
+.fantasy {
+  font-family: fantasy;
+  font-size: 50px;
+  transition: all ease-in 3s;
+}
+.noFantasy{
+  font-family: default;
+  font-size: default;
+  transition: all ease-out 3s;
+}
+/*.directiveColor{
+  color: white;
+}*/

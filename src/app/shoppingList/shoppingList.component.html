@@ -1,0 +1,18 @@
+<!-- <h2>Shopping List COmponent Works !!</h2> -->
+
+<!-- Application Code Starts -->
+  <div class="row">
+    <div class="col-xs-10">
+      <shopping-List-Edit-Comp (ingredientAdded)="onIngredientAdded($event)"></shopping-List-Edit-Comp>
+      <hr>
+      <ul class="list-group">
+        <a
+          class="list-group-item"
+          style="cursor: pointer"
+          *ngFor="let ingredient of ingredients;">
+          {{ingredient.name}} ( {{ingredient.amount}} )
+        </a>
+      </ul>
+    </div>
+  </div>
+<!-- Ends -->

@@ -1,0 +1,27 @@
+<!-- <h3>Shopping List Edit Works !!</h3> -->
+
+<!-- Application Code Starts -->
+  <div class="row">
+    <div class="col-xs-12">
+      <form class="">
+        <div class="row">
+          <div class="col-sm-5 form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" [(ngModel)]="shopItem.name" name="first" #nameInput>
+          </div>
+          <div class="col-sm-2 from-group">
+            <label for="amount">Amount</label>
+            <input type="text" id="amount" class="form-control" [(ngModel)]="shopItem.amount" name="second" #amountInput>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <button type="submit" class="btn btn-success" (click)="addItem(shopItem)">Add</button>
+            <button type="button" class="btn btn-danger" (click)="deleteItem()">Delete</button>
+            <button type="button" class="btn btn-primary" (click)="clearInput(shopItem)">Clear</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<!-- Ends -->

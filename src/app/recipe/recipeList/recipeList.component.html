@@ -1,0 +1,17 @@
+<!-- <h3>Recipe List Works !!</h3> -->
+
+<!-- Application Code Starts -->
+  <div class="row">
+    <div class="col-xs-12">
+      <button type="button" class="btn btn-success">New Recipe</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <recipe-Item-Comp *ngFor="let recipeEl of recipes"
+        [recipe]="recipeEl"
+        (recipeItemEmit)="recipeDetailReceiver(recipeEl)"></recipe-Item-Comp>
+    </div>
+  </div>
+<!-- Ends -->

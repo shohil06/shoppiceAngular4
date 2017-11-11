@@ -1,0 +1,20 @@
+<!-- <h2> Recipe Component Works !!</h2> -->
+
+
+<!-- Recipe Code Starts -->
+  <div class="row">
+    <div class="col-md-5">
+      <recipe-List-Comp (recipeToRecipeDetail)="recipeDetailCompReceiver($event)"></recipe-List-Comp>
+    </div>
+    <div class="col-md-7">
+      <recipe-Detail-Comp
+        *ngIf="recipe; else ngShowTemplate"
+        [recipe]="recipe"
+        [ngClass]="{'fantasy': recipe !== undefined, 'noFantasy': recipe === undefined}">
+      </recipe-Detail-Comp>
+      <ng-template #ngShowTemplate>
+        <p>Please Select a Recipe !</p>
+      </ng-template>
+    </div>
+  </div>
+<!-- Ends -->

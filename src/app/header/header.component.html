@@ -1,0 +1,26 @@
+<!-- <h1>This is Header</h1> -->
+
+<!-- Application Code Starts -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">Recipe Book</a>
+      </div>
+      <div class="navbar-default">
+        <ul class="nav navbar-nav">
+          <li (click)="onSelect('Recipe')"><a href="#" #Recipe>Recipes</a></li>
+          <li (click)="onSelect('Shopping')"><a href="#" #Shopping>Shopping List</a></li>
+        </ul>
+        <ul class="nav navbar-right navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Manage <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Save Data</a></li>
+              <li><a href="#">Fetch Data</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Ends -->
